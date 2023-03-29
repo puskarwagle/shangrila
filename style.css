@@ -33,13 +33,27 @@ body {
   left: 0;
   z-index: 100;
 }
-
+nav {
+	margin-top:auto;
+}
+nav ul {
+	display:flex;
+}
+nav ul li{
+	list-style:none;
+	margin-left:1rem;
+}
+nav ul li a{
+	text-decoration:none;
+	color:white;
+	font-weight:400;
+}
 #getIn {
   padding: 16vw 40vw 16vw 5vw;
   display: flex;
   color: #fff;
   flex-direction: column;
-  border:2px solid red;
+  border:0px solid red;
 }
 
 #getIn span {
@@ -90,7 +104,7 @@ body {
 }
 
 #boxes {
-  border: 2px solid red;
+  border: 0px solid red;
   display: flex;
   flex-wrap: wrap;
   padding: 4rem 4rem 4rem 4rem;
@@ -194,16 +208,81 @@ body {
   border-radius: 1rem;
 }
 
+#recentWorks {
+	border:0px solid red;
+	background: linear-gradient(to right, blue, royalblue);
+  color: #fff;
+  padding: 5rem 3rem;
+}
+#recentWorks #span {
+	font-size: 3rem;
+}
+#recentWorks #honey {
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem 2rem;
+}
+#recentWorks #honey .rw {
+  position: relative;
+  overflow:hidden;
+}
+#recentWorks #honey .rw .imgL {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 2rem 2rem;
+	border: 0px solid red;
+	border-radius: 10px;
+	position: relative;
+  z-index: 1;
+}
+#recentWorks #honey .rw .tect {
+	font-size:0.9em;
+	background: linear-gradient(to right, blue, royalblue);
+	position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+	opacity:0;
+	transform: translateY(100%);
+}
+#recentWorks #honey .rw:hover .tect {
+	opacity:1;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	text-align: center;
+	padding: 1rem 1rem;
+	transition: transform 0.5s ease;
+	transform: translateY(0%);
+	border-radius: 10px;
+	border: 1px solid #fff;
+}
+#recentWorks #honey .rw img {
+	width: 16vw;
+	aspect-ratio: 1/1;
+	flex-basis: 33.33%;
+}
+#recentWorks #honey .rw span:nth-child(2) {
+	font-size: 1.2em;
+	margin: 0.1em 0em;
+}
+#recentWorks #honey .rw span:nth-child(3) {
+	font-size: 0.9em;
+}
+
+
 #happy {
   padding: 0rem 6rem;
   text-align: center;
   transition: transform 0.5s ease;
 }
-
 #happy h1 {
   padding: 2rem;
 }
-
 #happy #div {
   display: flex;
   justify-content: space-between;
